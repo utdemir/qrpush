@@ -100,6 +100,8 @@ if ips.size > 1
   end while num <= 0 or num > ips.size
     
   ip = ips[num-1]
+else
+  ip = ips[0]
 end
 
 url = "http://#{ip}:#{$options[:port]}/#{escaped}"
