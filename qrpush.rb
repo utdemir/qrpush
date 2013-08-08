@@ -62,7 +62,7 @@ end
 
 $options = {:qr_size => 2, :port => 9090, :clear => false}
 optparse = OptionParser.new do |opts|
-  opts.banner = "Usage: main.rb [options] PATH"
+  opts.banner = "Usage: qrpush.rb [options] PATH"
   
   opts.on("-p", "--port PORT", "Port for web server", Integer) do |v|
     $options[:port] = v
