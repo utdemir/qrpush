@@ -44,7 +44,7 @@ end
 def escape_filename(fname)
   escaped = URI.encode_www_form_component fname
   while escaped.length > 40
-    ext = File.extname fnamex
+    ext = File.extname fname
     base = fname[0..-ext.length-2]
     fname = base + ext
     escaped = URI.encode_www_form_component fname
