@@ -8,12 +8,20 @@ It works by creating a simple web server and generating a QrCode containing comp
 So you can simply read the generated barcode from your smart phone and you can download the file directly without using any intermediate server, using a QrCode reader like [Barcode Scanner](https://play.google.com/store/apps/details?id=com.google.zxing.client.android).
 
 Installation
-============
-    
+------------
+
+Install bundler via your distributions package manager or
+
+    sudo gem install bundler
+
+And then clone repository and install dependencies:
+
     git clone https://github.com/utdemir/rqrcode.git 
     cd qrpush
-    sudo gem install bundler
     sudo bundle install
+
+Usage
+-----
 
 The application should work on a terminal supporting Unicode.
 
@@ -22,9 +30,9 @@ The application should work on a terminal supporting Unicode.
       -s, --size SIZE                  Size for QrCode
       -c, --clear                      Clear screen
 
-Example:
+**Example**:
 
-    %./qrpush.rb ~/Downloads/cm-10.1-20130725-NIGHTLY-n7100.zip
+    % ./qrpush.rb ~/Downloads/cm-10.1-20130725-NIGHTLY-n7100.zip
     More than one IP found, select one:
     1 - 192.168.1.24
     2 - 192.168.122.1
