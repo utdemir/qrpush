@@ -7,6 +7,14 @@ It works by creating a simple web server and generating a QrCode containing comp
 
 So you can simply read the generated barcode from your smart phone and you can download the file directly without using any intermediate server, using a QrCode reader like [Barcode Scanner](https://play.google.com/store/apps/details?id=com.google.zxing.client.android).
 
+Installation
+============
+    
+    git clone https://github.com/utdemir/rqrcode.git 
+    cd qrpush
+    sudo gem install bundler
+    sudo bundle install
+
 The application should work on a terminal supporting Unicode.
 
     Usage: qrpush.rb [options] PATH
